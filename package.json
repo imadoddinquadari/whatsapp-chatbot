@@ -1,13 +1,11 @@
 {
   "name": "whatsapp-chatbot",
   "version": "1.0.0",
+  "description": "Basic WhatsApp chatbot project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "dependencies": {
-    "express": "^4.18.2",
-    "whatsapp-web.js": "^1.21.1",
-    "qrcode-terminal": "^0.12.0"
-  }
+  "author": "Imadoddin Quadari",
+  "license": "MIT"
 }
