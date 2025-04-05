@@ -1,10 +1,12 @@
+const connectDB = require('./db');
+connectDB(); // Start the MongoDB connection
+
 require("dotenv").config();
 const express = require("express");
 const app = express();
 
 app.use(express.json()); // if you're expecting JSON messages
 app.use(express.urlencoded({ extended: true })); // for form-data from Twilio
-
 
 app.get("/", (req, res) => {
     res.send("WhatsApp Chatbot is Running! 🚀");
